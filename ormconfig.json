@@ -1,0 +1,18 @@
+{
+    "type": "mysql",
+    "host": "172.21.192.1",
+    "port": 3306,
+    "username": "nicoolas",
+    "password": "12345",
+    "database": "nlw",
+    "migrations": [
+        "src/database/migrations/*.ts"
+    ],
+    "entities": [
+        "src/entities/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "src/database/migrations",
+        "entitiesDir": "src/entities"
+    }
+}
