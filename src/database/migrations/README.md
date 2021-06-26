@@ -1,0 +1,1 @@
+yarn typeorm migratoin:create -n CreateTags
