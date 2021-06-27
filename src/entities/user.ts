@@ -1,11 +1,8 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn } from "typeorm"
 import { v4 as uuid } from "uuid"
-
+import { Exclude } from "class-transformer"
 @Entity("users")
 class User {
-
-    // yarn add uuid
-    // yarn add @types/uuid -D
 
     @PrimaryColumn()
     readonly id: string;
@@ -17,6 +14,7 @@ class User {
     email: string;
 
     @Column()
+    @Exclude()
     password: string;
 
     @Column()
